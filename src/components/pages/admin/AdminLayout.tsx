@@ -18,23 +18,23 @@ function AdminLayout({ children }: AdminLayoutProps) {
             className="app-header__title"
             style={{ padding: "1rem 1.5rem", display: "block" }}
           >
-            ← Back to Orders
+            ← Home
           </Link>
         </div>
         <nav className="admin-nav">
-          <NavLink
-            to="/admin/departments"
-            className="admin-nav__item"
-            activeClassName="admin-nav__item--active"
-          >
-            Departments
-          </NavLink>
           <NavLink
             to="/admin/users"
             className="admin-nav__item"
             activeClassName="admin-nav__item--active"
           >
             Users
+          </NavLink>
+          <NavLink
+            to="/admin/po-groups"
+            className="admin-nav__item"
+            activeClassName="admin-nav__item--active"
+          >
+            PO Groups
           </NavLink>
           <NavLink
             to="/admin/vendors"
@@ -65,11 +65,11 @@ function AdminLayout({ children }: AdminLayoutProps) {
             Technicians
           </NavLink>
           <NavLink
-            to="/admin/po-groups"
+            to="/admin/departments"
             className="admin-nav__item"
             activeClassName="admin-nav__item--active"
           >
-            PO Groups
+            Departments
           </NavLink>
         </nav>
         <div

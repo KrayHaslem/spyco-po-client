@@ -194,8 +194,8 @@ function CreateOrderPage() {
     setIsSubmitting(true);
 
     const data: CreateOrderData = {
-      vendor_id: vendor.id,
-      unit_id: unit.id,
+      vendor_id: vendor!.id,
+      unit_id: unit!.id,
       description: description.trim(),
       notes: notes.trim() || null,
       items: validItems.map((item) => ({

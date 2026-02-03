@@ -122,7 +122,7 @@ function AppRoutes() {
           <AdminLayout>
             <Switch>
               <Route exact path="/admin">
-                <Redirect to="/admin/departments" />
+                <Redirect to="/admin/users" />
               </Route>
               <Route path="/admin/departments">
                 <DepartmentsPage />
